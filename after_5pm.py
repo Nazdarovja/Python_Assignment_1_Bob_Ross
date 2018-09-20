@@ -13,14 +13,6 @@ def after_5pm(file_name):
 
     return counter
 
-# date_time = org_timestamp.split('T',1)
-# timestamp = date_time[1].split('.')
-# time_str = timestamp[0]
-
-
-# res = sum(x * int(t) for x, t in zip([3600, 60, 1], time_str.split(":")))
-# print(res)
-
 if __name__ == '__main__':
     file_name = 'BobRoss.txt'
     after_5pm(file_name)
