@@ -12,16 +12,11 @@ def unique_users(data):
     """
     
     # parse all names out of dictionary to list
-    names = []
-    for dct in data:
-        names.append(dct['name'])
-    
+
     # creating a set, with the list of names as input. 
     # this will ignore all names which is already contained in the set,
     # only containing unique entries in the end.
-    unique_names = set(names)
-
-    return len(unique_names)
+    return len(set([dct['name'] for dct in data]))
 
 
 if __name__ == '__main__':
