@@ -1,6 +1,5 @@
 import os
 
-
 def convert(textfile):
     """Take a .txt file as input. Returns a list of json objects in the format {timestamp, name, message}"""
 

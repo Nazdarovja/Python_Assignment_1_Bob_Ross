@@ -1,5 +1,4 @@
 from Utility.Textfile2json import convert
-from Utility.histogram import create_simple_histogram
 import os
 
 def unique_users(text_file):
