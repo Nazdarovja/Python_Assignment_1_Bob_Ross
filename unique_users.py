@@ -1,14 +1,19 @@
 from Utility.Textfile2json import convert
 import os
 
-def unique_users(json_data):
-    """
-        Takes -txt filename as input. Returns number of unique users.
+def unique_users(data):
+    """Gets the amount of unique names in data
+
+        Args:
+            data: List of Dictionaries
+
+        Returns:
+            int, unique names
     """
     
     # parse all names out of dictionary to list
     names = []
-    for dct in json_data:
+    for dct in data:
         names.append(dct['name'])
     
     # creating a set, with the list of names as input. 
@@ -21,5 +26,5 @@ def unique_users(json_data):
 
 if __name__ == '__main__':
     file_name = 'BobRoss.txt'
-    json_data = convert(file_name)
-    unique_users(file_name)
+    data = convert(file_name)
+    print(unique_users(data))
