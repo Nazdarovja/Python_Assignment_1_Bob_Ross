@@ -15,12 +15,16 @@ def find_most_used_word(list_of_lines):
             word = word.replace("â€œ","")
             word = word.replace("â€˜","")
             word = word.replace("*","")
-            if word not in wordcount:
-                wordcount[word] = 1
-            else:
-                wordcount[word] += 1
+
+
+
+            wordcount[word] = wordcount.get(word, 0) + 1
+            # if word not in wordcount:
+            #     wordcount[word] = 1
+            # else:
+            #     wordcount[word] += 1
     
     word_counter = collections.Counter(wordcount)
-    return word_counter.most_common(1)
+    return word_counter.most_common(1)[0]
     
 
