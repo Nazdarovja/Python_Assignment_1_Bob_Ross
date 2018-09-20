@@ -21,5 +21,6 @@ def find_most_used_word(list_of_lines):
                 wordcount[word] += 1
     
     word_counter = collections.Counter(wordcount)
-    for word, count in word_counter.most_common(10):
-        print(word, ": ", count)
+    return word_counter.most_common(1)
+    
+
