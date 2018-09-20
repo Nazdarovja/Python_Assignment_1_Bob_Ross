@@ -19,3 +19,9 @@ example:
 
 ## Results
 
+- How many lines does the .txt file have? =  181533
+- How many times does the .txt file write "RUINED" ? =  5477
+- How many messages was written after 05:00pm ? =  180513
+- How many different users does the .txt file contain ? =  67568
+- What is most used word in the .txt file ? =  ('KappaRoss', 36068)
+
