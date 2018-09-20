@@ -1,6 +1,7 @@
 import os.path
 import sys
 from Utility.Downloader import download_as_file as downloader
+import Statistics as stat
 
 if __name__ == "__main__":
     try:
@@ -14,4 +15,6 @@ if __name__ == "__main__":
             print("Something went wrong.. : ", e)
             sys.exit(1)
     downloader(url, file_name)
+    
+    stat.create_statistics("BobRoss.txt")
     
