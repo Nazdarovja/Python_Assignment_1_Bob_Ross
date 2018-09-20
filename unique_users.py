@@ -1,4 +1,3 @@
-
 def unique_users(data):
     """Gets the amount of unique names in data
 
