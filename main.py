@@ -16,5 +16,5 @@ if __name__ == "__main__":
             sys.exit(1)
     downloader(url, file_name)
     
-    stat.create_statistics()
+    stat.create_statistics("BobRoss.txt")
     
