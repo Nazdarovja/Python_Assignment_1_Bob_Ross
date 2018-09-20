@@ -5,7 +5,8 @@ def get_number_of_ruined(json_data):
 
     count = 0
     for line in json_data:
-        to_check = line["name"] + line["message"]
+        to_check = line["name"] +' '+ line["message"]
+        print(to_check)
         if "ruined" in to_check.lower():
             count += 1
 
