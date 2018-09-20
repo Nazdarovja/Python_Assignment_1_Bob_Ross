@@ -1,6 +1,7 @@
 from Utility.Textfile2json import convert
 import number_of_ruined as nor
 import after_5pm as a5
+from most_used_word import find_most_used_word as most_used_word
 
 def create_statistics(text_file):
     """Takes -txt file as input. Prints statistics."""

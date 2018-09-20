@@ -3,9 +3,6 @@ import os
 from Utility.Downloader import download_as_file as downloader
 from Utility.Textfile2json import convert as convert
 
-url = 'https://raw.githubusercontent.com/HawkDon/Python_Assignment1/master/BobRoss.txt'
-file = os.path.basename(url)
-
 def find_most_used_word(list_of_lines):
     wordcount = {}
     for line in list_of_lines:
