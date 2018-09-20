@@ -1,13 +1,11 @@
 from Utility.Textfile2json import convert
 import os
 
-def unique_users(text_file):
+def unique_users(json_data):
     """
         Takes -txt filename as input. Returns number of unique users.
     """
-    # read text_file in convert() which returns a dictionary
-    json_data = convert(text_file)
-
+    
     # parse all names out of dictionary to list
     names = []
     for dct in json_data:

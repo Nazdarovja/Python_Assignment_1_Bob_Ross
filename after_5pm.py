@@ -15,4 +15,4 @@ def after_5pm(file_name):
 
 if __name__ == '__main__':
     file_name = 'BobRoss.txt'
-    after_5pm(file_name)
+    print(after_5pm(file_name))
