@@ -15,6 +15,7 @@ Receives a URL to the dataset as input.~~ => main.py
      - I computes the statistics specified in the given task.
      - It produces output in a suitable form.
 
+Bob Ross .txt file link -> https://raw.githubusercontent.com/HawkDon/Python_Assignment1/master/BobRoss.txt 
 ### Questions for Bob Ross:
 - How many lines does the .txt file have?
 - How many times does the .txt file write "RUINED" ?
