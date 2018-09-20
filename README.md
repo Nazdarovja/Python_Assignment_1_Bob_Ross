@@ -15,7 +15,12 @@ Receives a URL to the dataset as input.~~ => main.py
      - I computes the statistics specified in the given task.
      - It produces output in a suitable form.
 
-
+### Questions for Bob Ross:
+-How many lines does the .txt file have?
+-How many times does the .txt file write "RUINED" ?
+-How many messages was written after 05:00 ?
+-How many different users does the .txt file contain ?
+-What is most used word in the .txt file ?
 
 ---
 
