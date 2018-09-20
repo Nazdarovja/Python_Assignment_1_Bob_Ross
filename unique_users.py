@@ -20,6 +20,6 @@ def unique_users(json_data):
 
 
 if __name__ == '__main__':
-    file_name = 'BobRoss.txt'¨
+    file_name = 'BobRoss.txt'
     json_data = convert(file_name)
     unique_users(file_name)
