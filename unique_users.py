@@ -1,6 +1,3 @@
-from Utility.Textfile2json import convert
-import os
-
 def unique_users(data):
     """Gets the amount of unique names in data
 
@@ -22,9 +19,3 @@ def unique_users(data):
     unique_names = set(names)
 
     return len(unique_names)
-
-
-if __name__ == '__main__':
-    file_name = 'BobRoss.txt'
-    data = convert(file_name)
-    print(unique_users(data))

@@ -1,6 +1,3 @@
-from Utility.Textfile2json import convert
-
-
 def after_5pm(json_data):
     """
     Takes list of json as input. Returns number chat messages after 17/5pm.
