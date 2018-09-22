@@ -1,15 +1,28 @@
 # Python Assignment 1
 ### Assignment: Bob Ross Twitch Chatlog 2015 - https://github.com/HawkDon/Python_Assignment1
 
-## Group: 
+## Group 
 **Foolish Supermarket** - Alexander (cph-ah353), Stanislav (cph-sn186), Mathias B. (cph-mb493), Mikkel L. (cph-ml474)
 
----
 
 
-## How to run (CLI)
+## Project Deescription
+This is a program written to interact with a specific dataset (see example below). 
 
-In root of folder, write: 
+When the program receives the URL to the data as input, it downloads the file, cleans-up/manipulates the input data and computes certain statistics.
+
+(The statistics are related to the list of tasks specified in the assignment description [here](https://github.com/datsoftlyngby/dat4sem2018fall-python/blob/master/assignments/assignment1.md)).
+
+
+## Dependencies
+
+This project uses the Requests library. To install Requests, write (in your terminal of choice):
+
+``` pip install requests ```
+
+## How to run (from CLI)
+
+In root of folder, in your terminal of choice, write: 
 
 ``` python main.py <url> <filename>[optional] ```
 
