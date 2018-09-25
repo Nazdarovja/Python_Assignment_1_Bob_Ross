@@ -19,3 +19,4 @@ def create_statistics(text_file):
     print("How many different users does the .txt file contain ? = ", num_of_unique_users)
     print("What is most used word in the .txt file ? = ", most_used_word(json_data))
 
+create_statistics("BobRoss.txt")
