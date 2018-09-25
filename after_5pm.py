@@ -1,11 +1,12 @@
 def after_5pm(json_data):
-    """
-    Takes list of json as input. Returns number chat messages after 17/5pm.
-    """
-    counter = 0
-    for line in json_data:
-        if(int(line['timestamp'][11:13]) >= 17 or int(line['timestamp'][11:13]) < 4 ):  # between 17-03 (where dataset stops)
-            counter += 1
+    """Takes list of json as input. Returns number chat messages after 17/5pm
 
-    return counter
+        Args: 
+            json_data: List of Dictionaries.
 
+        Returns: 
+            int, num of chat messages.
+    """
+
+    # Dataset is limited to timestamps for <1 day, so possible to sort by hour >=17 or <4 o'clock. 
+    return len([(int(line['timestamp'][11:13]) >= 17 or int(line['timestamp'][11:13]) < 4) for line in json_data])
